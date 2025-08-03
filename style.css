@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+
 * {
   font-family: "Courier New", monospace;
   font-weight: bold;
@@ -152,7 +152,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 28px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   border: 4px solid plum;
   animation: animate-profile-picture 200ms 1s backwards;
 }
@@ -161,7 +161,7 @@ a {
   0% {
     transform: scale(0);
   }
-  transform: scle(1.1;);
+  transform: scale(1.1;);
 }
 100% {
 }
@@ -169,11 +169,11 @@ a {
 .about-me__picture {
   width: 100%;
   transform: scale(1.9);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .about-me__picture:hover {
-  transform: scale(1.2);
+  transform: scale(1.8);
 }
 
 .about-me__info--container {
@@ -206,7 +206,7 @@ a {
   }
 }
 .about-me__link {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #242424;
   text-decoration: none;
   border-bottom: 2px solid plum;
@@ -269,6 +269,10 @@ a {
 .about-me__img {
   width: 100%;
 }
+
+.section__title {
+  margin-bottom: 30px;
+}
 /* TECH - STACK */
 
 .html__language--img {
@@ -279,7 +283,7 @@ a {
 .html__language--img:hover {
   filter: brightness(80%);
   opacity: (0.86);
-  transition: all;
+  transition: all 300ms;
 }
 .css__language--img {
   width: 100%;
@@ -289,7 +293,7 @@ a {
 .css__language--img:hover {
   filter: brightness(80%);
   opacity: (0.86);
-  transition: all;
+  transition: all 300ms;
 }
 
 .js__language--img {
@@ -300,11 +304,11 @@ a {
 .js__language--img:hover {
   filter: brightness(80%);
   opacity: (0.86);
-  transition: all;
+  transition: all 300ms;
 }
 
 .language {
-  width: 100%;
+  width: 25%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -337,13 +341,14 @@ a {
 
 .language__name {
   color: #333;
-  position: relative;
+  position: absolute;
   bottom: 0;
   transform: scale(1);
   transition: all 300ms;
 }
 
-.language__name .language__name:hover {
+.language
+.language__name:hover {
   transform: scale(1);
 }
 
@@ -491,13 +496,24 @@ footer {
 }
 
 /*Small phones, tablets, large smartphones */
-@media (max-width: 768px) .nav {
+@media (max-width: 768px) 
+
+nav {
   height: 68px;
 }
 
 h1 {
   font-size: 28px;
 }
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
 .about-me__info--para {
   font-size: 18px;
 }
@@ -505,3 +521,7 @@ h1 {
 .language {
   width: calc(100% / 1);
 }
+
+
+
+
